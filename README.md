@@ -316,12 +316,6 @@ The tests cover detector-objective constants, temporal pairing, causal
 context, semantic controls, mapper dimensions, pairwise cues, per-image
 MSA-NWD attention, and association-checkpoint protocol enforcement.
 
-## Reproducibility boundary
+## Citing our work
 
-This repository aligns formulas, data flow, dimensions, constants, and
-protocols with the supplied manuscript. Exact numerical reproduction also
-requires the authors' Track-3 split, detector-to-GT matching exports, trained
-checkpoints, seed-specific logs, dataset-appropriate SOT localization weights,
-the generic-SOT localizer training/export recipe, and the reported A100
-runtime. The SOT search factor and crop geometry are now explicit and tested.
-These remaining assets are not fabricated here.
+The full citation format will be released once the paper is accepted—stay tuned!
