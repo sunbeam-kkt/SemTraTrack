@@ -1,0 +1,8 @@
+# Set `path` to your Track-3 dataset root before training.
+# Example: /home/user/datasets/Track3
+path: ./dataset
+train: Yolo_train/images
+val: Yolo_val/images
+nc: 1
+names:
+  0: drone

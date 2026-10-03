@@ -1,0 +1,16 @@
+name: semtratrack
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pytorch=2.2.2
+  - pytorch-cuda=12.1
+  - pip
+  - pip:
+      - numpy==1.26.4
+      - scipy==1.13.1
+      - opencv-python==4.10.0.84
+      - PyYAML==6.0.2
+      - pytest==8.3.2

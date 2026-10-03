@@ -1,0 +1,8 @@
+# Paper environment core (PyTorch/CUDA version follows the current manuscript).
+numpy==1.26.4
+scipy==1.13.1
+opencv-python==4.10.0.84
+PyYAML==6.0.2
+pytest==8.3.2
+# Install PyTorch 2.2.2 with the CUDA 12.1 wheel appropriate to your machine.
+# Install the official YOLOv13 fork with: bash scripts/bootstrap_yolov13.sh

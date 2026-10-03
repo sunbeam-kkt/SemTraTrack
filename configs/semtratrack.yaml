@@ -1,0 +1,59 @@
+# Defaults synchronized with the current SemTraTrack manuscript.
+imgsz: 640
+amp: true
+conf_threshold: 0.25
+detector_ablation: full
+
+# ISPS-SOD auxiliary weights
+lambda_con: 0.10
+lambda_nwd: 0.50
+lambda_tcr: 0.10
+lambda_mifd: 0.05
+lambda_hard: 0.10
+tau_con: 0.10
+mifd_alpha: 0.30
+tau_soft: 0.10
+hard_negative_ratio: 0.02
+hard_negative_margin: 0.30
+eta_nwd: 0.50
+
+# LGATracker
+window_size: 30
+context_history: 10
+max_lost: 5
+shared_dim: 128
+token_embedding_dim: 64
+language_hidden_dim: 128
+context_dim: 128
+beta: 0.20
+context_variant: full
+context_seed: 0
+disabled_cues: []
+disabled_attributes: []
+cue_weights: [0.50, 0.20, 0.10, 0.20]
+small_area_threshold: 256
+large_area_threshold: 9216
+state_mismatch_score: 0.05
+neutral_direction_score: 0.50
+stationary_pixels: 50.0
+min_match_score: 0.0
+
+# Stage-I training protocol
+train_epochs: 50
+image_batch: 16
+optimizer: AdamW
+lr0: 0.0005
+weight_decay: 0.01
+cos_lr: true
+warmup_epochs: 5
+train_amp: true
+# Synchronized adjacent-frame augmentation (Ultralytics-style defaults)
+hsv_h: 0.015
+hsv_s: 0.70
+hsv_v: 0.40
+translate: 0.10
+scale: 0.50
+
+# Official YOLOv13-S feature taps feeding Detect in configs/yolov13s-UAV.yaml
+feature_layers: [23, 27, 31]
+feature_dims: [128, 256, 512]
