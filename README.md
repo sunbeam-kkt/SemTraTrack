@@ -1,6 +1,6 @@
 # SemTraTrack
 
-Paper-aligned implementation of **SemTraTrack: Multilevel Fusion of Semantic
+Official implementation of **SemTraTrack: Multilevel Fusion of Semantic
 Foreground Cues and Causal Trajectory Context for Robust UAV Tracking**.
 
 SemTraTrack is trained in two stages:
